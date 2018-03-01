@@ -3,9 +3,6 @@ React-Month-Picker-Input
 
 A month picker input and calendar for [React](http://facebook.github.io/react/index.html).
 
-## Demo
-
-Live demo: [slavakisel.github.io/react-month-picker-input](https://slavakisel.github.io/react-month-picker-input/)
 
 ## API
 
@@ -13,13 +10,13 @@ Live demo: [slavakisel.github.io/react-month-picker-input](https://slavakisel.gi
 |---|---|---|---|
 | year | number | void | Preselect year in calendar |
 | month | number (0..11) | void | Preselect month in calendar. If both year and month are specified then input field will be also prepopulated |
-| inputProps | object | empty object | Input field props, only `id` and `name` are supported |
+| inputProps | object | empty object | Input field props, only `id`, `name`, 'className' and 'disabled' are supported |
 | onChange | Function: (maskedValue: string, year: number, month: number) => any | - | onChange callback, receives `maskedValue`, `year` and `month` (begins with 0) as arguments |
 
 ## Installation
 
 ```
-npm install react-month-picker-input --save
+npm install max-month-picker --save
 ```
 
 ## Usage
@@ -31,6 +28,8 @@ var MonthPickerInput = require('react-month-picker-input');
 require('react-month-picker-input/dist/react-month-picker-input.css');
 
 <MonthPickerInput
+  id='string'
+  className="form-control"
   value={new Date()}
   onChange={function(selectedYear, selectedMonth) {
     console.log(selectedYear, selectedMonth);
@@ -40,4 +39,4 @@ require('react-month-picker-input/dist/react-month-picker-input.css');
 
 ## License
 
-Copyright (c) 2017 Viacheslav Kysil. [MIT](LICENSE) License.
+Copyright (c) [MIT](LICENSE) License.
