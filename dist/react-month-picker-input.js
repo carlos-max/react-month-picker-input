@@ -7,7 +7,7 @@
 		exports["ReactMonthPickerInput"] = factory(require("react-input-mask"), require("react"));
 	else
 		root["ReactMonthPickerInput"] = factory(root["react-input-mask"], root["React"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_0__) {
+})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_0__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -113,7 +113,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 
 
-var DATE_FORMAT = 'MM/YY';
+var DATE_FORMAT = 'MM/YYYY';
 
 
 
@@ -166,7 +166,7 @@ var MonthPickerInput = /** @class */ (function (_super) {
             return Object.assign({}, {
                 ref: function (input) { if (input)
                     _this.input = input; },
-                mask: "99/99",
+                mask: "99/9999",
                 placeholder: DATE_FORMAT,
                 type: 'text',
                 onBlur: _this.onInputBlur,
@@ -418,17 +418,17 @@ var Head = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return VIEW_MONTHS; });
 var MONTHS_NAMES = [
     "Jan",
-    "Feb",
+    "Fev",
     "Mar",
-    "Apr",
-    "May",
+    "Abr",
+    "Mai",
     "Jun",
     "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
+    "Ago",
+    "Set",
+    "Out",
     "Nov",
-    "Dec"
+    "Dez"
 ];
 var VIEW_YEARS = 'YEARS';
 var VIEW_MONTHS = 'MONTHS';
