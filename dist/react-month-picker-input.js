@@ -113,7 +113,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 
 
-var DATE_FORMAT = 'MM/YYYY';
+var DATE_FORMAT = 'DD/AAAA';
 
 
 
@@ -166,6 +166,7 @@ var MonthPickerInput = /** @class */ (function (_super) {
             return Object.assign({}, {
                 ref: function (input) { if (input)
                     _this.input = input; },
+                className: "form-control",
                 mask: "99/9999",
                 placeholder: DATE_FORMAT,
                 type: 'text',

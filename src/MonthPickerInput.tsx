@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import InputMask from 'react-input-mask';
 
-const DATE_FORMAT = 'MM/YYYY';
+const DATE_FORMAT = 'DD/AAAA';
 
 import MonthCalendar from './calendar';
 import { valuesToMask, valuesFromMask } from './utils';
@@ -110,6 +110,7 @@ class MonthPickerInput extends Component<IProps, IState> {
   inputProps = (): object => {
     return Object.assign({}, {
       ref: input => { if(input) this.input = input; },
+      className:"form-control",
       mask: "99/9999",
       placeholder: DATE_FORMAT,
       type: 'text',
